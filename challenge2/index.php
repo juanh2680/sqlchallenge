@@ -6,7 +6,7 @@
 </head>
 <body> 
 <h1> Challenge 2 </h1>
-<form method="GET" action="index.php">
+<form method="POST" action="index.php">
  <label for="colors">Search for products</label><input id="color" name="color" type="text" />
  <select name="color" id="colors">
  <option value="red">RED </option>
