@@ -1,0 +1,82 @@
+div {
+    margin: 10px 0;
+  }
+  label {
+    display: block;
+  }
+  label.inlinelabel {
+    display: inline;
+  }
+  body {
+      background-color: #A6ACAF  ;
+  }
+  input[type=text] {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px;
+    }
+input[type=email] {
+    
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px;
+
+}
+input[type=tel] {
+
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px;
+
+}
+input[type=url] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px;
+
+}
+input[id=comment] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px;
+}
+textarea {
+     width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px;
+    }
+
+#name-error,#email-error ,#phone-error, #comment-error {
+    color: red;
+}
+label {
+    font-weight: bold;
+}
+
+.form {
+  
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: 15%;
+    margin-right:15%;
+    width: 70%;
+}
