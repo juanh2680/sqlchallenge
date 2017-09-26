@@ -27,9 +27,10 @@ if(!empty($_POST)){
         // this gets your statement ready
         $prepared = $db->prepare($query);
         $prepared->execute(array(':color' => $_POST["color"]));
-        
-        var_dump($prepared->fetchAll());
-        foreach($prepared->fetchAll() as $color){
+        $items = $prepared->fetchAll();
+        print_r($items);
+
+        foreach( $items as $item){
             echo "<p>{$color["name"]}, {$color["color"]}</p>";
         }
     } catch (Exception $e) {
