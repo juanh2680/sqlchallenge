@@ -27,7 +27,7 @@ if(!empty($_GET) && $_GET["color"] != ""){
         $prepared = $db->prepare($query);
         $prepared->execute(array(':color' => $_GET["color"]));
         $items = $prepared->fetchAll();
-        print_r($items);
+       
 
         foreach( $items as $item){
             echo "<p>{$item["name"]}, {$item["color"]}</p>";

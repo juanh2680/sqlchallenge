@@ -15,20 +15,19 @@
 </form>
 <?php
 if(!empty($_POST)){
-    $db = new PDO("mysql:host=localhost;dbname=JHernandex;port=8888","r2hstudent", "SbFaGzNgGIE8kfP");
+    $db = new PDO("mysql:host=localhost;dbname=jdavid_JHernandez;port=8888","r2hstudent", "SbFaGzNgGIE8kfP");
     try {
         //this queries what we actually need 
-      $eachProduct = 'INSERT INTO Challenge2(name,description,price,color) VALUES (:name,:description,:price,:color)');
+      $query = "INSERT INTO Challenge2 (name , description ,price ,color) VALUES ( :name, :description, :price, :color)";
       // this gets your statement ready
-       $prepared = $db->prepare($$eachProduct);
-    
-       
-       $prepared->bindParam(':colors',$_POST["name"]);
-       $prepared->bindParam(':colors',$_POST["description"]);
-       $prepared->bindParam(':colors',$_POST["price"]);
-       $prepared->bindParam(':colors',$_POST["color"]);
-       $prepared->execute();
-    
+       $prepared = $db->prepare($query); 
+       $prepared->execute(array(
+           ':name' => $_POST["name"],
+           ':description' => $_POST["description"], 
+           ':price' => $_POST["price"], 
+           ':color' => $_POST["color"],  
+
+       ));      
       
     } catch (Exception $e) {
         echo "Bad query";
