@@ -25,7 +25,7 @@ if(!empty($_POST)){
            ':name' => $_POST["name"],
            ':description' => $_POST["description"], 
            ':price' => $_POST["price"], 
-           ':color' => $_POST["color"],  
+           ':color' => $_POST["color"],
        ));
        print_r($b);
     } catch (Exception $e) {
