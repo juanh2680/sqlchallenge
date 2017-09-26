@@ -21,13 +21,12 @@ if(!empty($_POST)){
       $query = "INSERT INTO jdavid_JHernandez.Challenge2 (name, description, price, color) VALUES (:name, :description, :price, :color)";
       // this gets your statement ready
        $prepared = $db->prepare($query); 
-       $b = $prepared->execute(array(
+        $prepared->execute(array(
            ':name' => $_POST["name"],
            ':description' => $_POST["description"], 
            ':price' => $_POST["price"], 
            ':color' => $_POST["color"],
        ));
-       print_r($b);
     } catch (Exception $e) {
         echo "Bad query";
         exit;

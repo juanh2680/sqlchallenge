@@ -1,6 +1,6 @@
 <?php 
 if(!empty($_GET)){
-$db = new PDO("mysql:host=localhost;dbname=JHernandex;port=8888","r2hstudent", "SbFaGzNgGIE8kfP");
+$db = new PDO("mysql:host=localhost;dbname=jdavid_JHernandez;port=8888","r2hstudent", "SbFaGzNgGIE8kfP");
 try {
     //this queries what we actually need 
    $results = $db->query("SELECT name,description,price,color,id FROM Challenge2 WHERE color= :colors");
