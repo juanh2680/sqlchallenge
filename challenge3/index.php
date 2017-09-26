@@ -7,7 +7,7 @@
 <body> 
 <h1>Challenge 3</h1>
 <form method="POST" action="index.php">
-    <label for="name">Name</label><input id="fname" name="fname" type="text" /> 
+    <label for="name">Name</label><input id="name" name="name" type="text" /> 
     <label for="description">Description</label><input type="text" id="description" name="description" />
     <label for="price">Price</label><input id="price" name="price" type="price" /> 
     <label for="color">Color</label><input type="text" id="color" name="color" /> 
