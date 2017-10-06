@@ -13,7 +13,9 @@
 <input type="submit" value="Submit">
 <select>
 <?php 
+// for each that sets (Name) which is equal to the states name's to $states
  foreach($array as $states){
+          // this makes the drop down work.
     echo "<option value =$states[Name]> $states[Name]</option>";
  }
 ?> 
